@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  background-image: url("images/Rectangle\ 1.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+}
+
+.intro p {
+  font-size: 30px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.blogs {
+  margin-left: 14rem;
+  padding: 2rem;
+}
+.blog-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d88761;
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 1200px;
+  gap: 3rem;
+  background: linear-gradient(135deg, #fbf2ed, #fedecf);
+}
+
+.blog-card img {
+  width: 320px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.blog-content {
+  flex: 1;
+}
+
+.blog-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-footer span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.blog-footer button {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  background-color: #f79f79;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-blogs {
+  padding: 2rem;
+  margin-left: 14rem;
+}
+.more-head {
+  font-size: 2rem;
+  margin-left: 14px;
+}
+
+.more-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.more-item {
+  text-align: center;
+}
+
+.more-item img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.more-item p {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-btn {
+  display: block;
+
+  margin: 5rem auto;
+  padding: 1rem 2rem;
+  background-color: #f79f79;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffc692;
+  height: 20vh;
+}
+footer p {
+  font-size: xx-large;
+}
+
+footer .social-icons .fa-brands {
+  font-size: xx-large;
+
+  margin: 0 0.5rem;
+  padding: 2rem;
+}
+
+/* About Section with Floating Image */
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2em;
+  margin: 2em;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.about .content {
+  background-color: #ffe9e3;
+  height: 100vh;
+  max-width: 50%;
+  position: relative;
+  left: 18em;
+  padding: 12em;
+  z-index: 0;
+}
+
+.about .content h2 {
+  font-size: xx-large;
+}
+
+.about .content p {
+  margin: 1em 0;
+}
+
+.about .image {
+  position: absolute;
+  right: 30em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.about .image img {
+  width: 200px;
+  height: auto;
+
+  opacity: 0.95;
+}
+
+/* Gallery Section */
+.gallery {
+  margin: 2em 10rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1em;
+}
+
+.gallery .images img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* blog section  */
+.gallery-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-bottom: 40rem;
+  height: 100vh;
+}
+
+.gallery-2 .image img {
+  width: 50%;
+  border-radius: 4px;
+}
+.no-image {
+  background-color: #ccc;
+  width: 50%;
+  height: 400px;
+  border-radius: 4px;
+}
+
+.for-ins {
+  height: 100vh;
+}
